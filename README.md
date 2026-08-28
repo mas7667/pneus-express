@@ -19,7 +19,7 @@ Application de gestion d'inventaire de pneus et de réservation de rendez-vous, 
 1. **Clonez le projet et installez les dépendances** :
 
    ```bash
-   npm install
+   npm ci
    ```
 
 2. **Configurez Supabase** :
@@ -32,7 +32,7 @@ Application de gestion d'inventaire de pneus et de réservation de rendez-vous, 
 3. **Configurez les variables d'environnement** :
 
    ```bash
-   copy .env.example .env
+   cp .env.example .env
    ```
 
    Puis ajoutez vos clés Supabase dans le fichier `.env` :
@@ -78,11 +78,19 @@ Tables :
 
 ## 🔧 Technologies utilisées
 
-- **React 19** avec TypeScript
+- **React 19.2** avec **TypeScript 5.8**
 - **Supabase** pour la base de données
-- **React Router** pour la navigation
+- **React Router 7** pour la navigation
 - **Tailwind CSS** pour le style
-- **Vite** comme bundler
+- **Vite 6.4** comme bundler
+
+## ✅ Vérification
+
+```bash
+npm run typecheck
+npm run build
+npm audit --omit=dev
+```
 
 ## 📝 Notes
 
